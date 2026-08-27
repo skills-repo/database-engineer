@@ -65,3 +65,14 @@ tags:
 - 聚焦单机/副本集优化，不涉及分片集群
 - 覆盖 MongoDB 5.0+ 版本特性
 - 不涉及跨数据库迁移和数据同步
+
+## 相关参考（Playbook）
+
+执行计划解读（explain executionStats）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
+索引设计决策（复合索引 ESR）→ `references/index-design.md`；
+慢查询分诊（profiler 聚合）→ `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
+事务、隔离级别与锁（多文档事务边界）→ `references/transactions-locking.md`；
+Schema 变更与零停机迁移（文档演进）→ `references/schema-migration.md`（`scripts/schema_lint.py`）；
+备份与恢复（副本集快照）→ `references/backup-recovery.md`；
+连接池与容量规划（WT 缓存）→ `references/capacity-and-pooling.md`；
+数据库选型决策 → `references/engine-selection.md`。

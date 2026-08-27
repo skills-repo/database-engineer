@@ -66,3 +66,13 @@ L4: 容量层 — 磁盘/连接数/备份 趋势 (P2/P3)
 - 聚焦监控策略和指标设计，不涉及具体监控系统部署
 - 覆盖 MySQL/PostgreSQL/MongoDB 通用指标，不深入单产品
 - 容量规划覆盖基础预测模型，不涉及复杂资源调度
+
+## 相关参考（Playbook）
+
+慢查询先由监控发现再进分诊 → `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
+连接池与容量规划（告警分级）→ `references/capacity-and-pooling.md`；
+备份任务成功心跳监控 → `references/backup-recovery.md`；
+锁等待监控 → `references/transactions-locking.md`；
+执行计划体检（辅助定位瓶颈）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
+索引/迁移的观测视角 → `references/index-design.md`、`references/schema-migration.md`；
+选型阶段的可观测性成本 → `references/engine-selection.md`。

@@ -186,3 +186,14 @@ ALTER SYSTEM SET idle_in_transaction_session_timeout = '60s';
 - [ ] 应用层实现了死锁退避重试
 - [ ] PG：已设置 `idle_in_transaction_session_timeout`
 - [ ] 死锁日志已开启持久化，便于事后分析
+
+## 相关子技能与层次边界
+
+本 playbook 负责**事务隔离级别、锁与死锁**的决策；不负责 Schema 迁移，见兄弟参考。
+
+- 落地到 `skills/mysql/SKILL.md`：InnoDB 锁类型 / 死锁退避重试。
+- 落地到 `skills/postgres-patterns/SKILL.md`：PG 锁与 idle_in_transaction 超时。
+- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：MongoDB 多文档事务与单文档原子性边界。
+- 兄弟参考：
+  - `references/schema-migration.md`：在线 DDL 的锁等待。
+  - `references/backup-recovery.md`：一致性备份与锁的相互作用。

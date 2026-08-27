@@ -64,3 +64,14 @@ tags:
 - 聚焦 MySQL 特定功能和优化，不涉及通用 SQL 入门
 - 高可用覆盖基础架构，不涉及大规模集群管理
 - 不涉及 MySQL 以外的数据库迁移
+
+## 相关参考（Playbook）
+
+执行计划解读（三引擎对照）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
+索引设计决策 → `references/index-design.md`；
+慢查询分诊（慢日志聚合）→ `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
+事务、隔离级别与锁 → `references/transactions-locking.md`；
+Schema 变更与零停机迁移 → `references/schema-migration.md`（`scripts/schema_lint.py`）；
+备份与恢复（含恢复演练）→ `references/backup-recovery.md`；
+连接池与容量规划 → `references/capacity-and-pooling.md`；
+数据库选型决策 → `references/engine-selection.md`。

@@ -170,3 +170,16 @@ SELECT count(*) FROM information_schema.routines WHERE routine_schema='public';
 - [ ] 恢复后做过行数/校验和/对象数量三项校验
 - [ ] 备份任务有成功心跳监控（缺失即告警）
 - [ ] binlog / WAL 保留期 ≥ 备份周期 × 2
+
+## 相关子技能与层次边界
+
+本 playbook 负责**备份策略、恢复演练与保留期**的决策；不负责具体引擎的高可用部署，落地由各引擎子技能承接。
+
+- 落地到 `skills/mysql/SKILL.md`：MySQL 的 mysqldump / xtrabackup / binlog 恢复路径。
+- 落地到 `skills/postgres-patterns/SKILL.md`：PostgreSQL 的 pg_dump / 物理备份 / WAL 归档恢复。
+- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：MongoDB 的 mongodump / 副本集一致性快照。
+- 落地到 `skills/database-observability/SKILL.md`：备份任务成功心跳监控与恢复校验指标。
+- 兄弟参考：
+  - `references/schema-migration.md`：迁移前先确认可回滚备份。
+  - `references/engine-selection.md`：选型时已确认恢复路径（恢复演练过才算数）。
+  - `references/capacity-and-pooling.md`：保留期与磁盘容量耦合。

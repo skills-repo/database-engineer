@@ -178,3 +178,16 @@ ORDER BY data_length + index_length DESC LIMIT 10;
 - [ ] 容量统计包含索引与 binlog/WAL
 - [ ] 告警分了 P1/P2/P3，每条附处置链接
 - [ ] 压测确定过延迟拐点，日常负载 < 60% 上限
+
+## 相关子技能与层次边界
+
+本 playbook 负责**连接池参数、容量预测与拐点压测**的决策；不负责具体引擎调优，落地由各引擎子技能承接。
+
+- 落地到 `skills/database-observability/SKILL.md`：容量指标采集、P1/P2/P3 告警与处置链接。
+- 落地到 `skills/mysql/SKILL.md`：MySQL 连接池（max_connections / 线程池）与缓冲池容量。
+- 落地到 `skills/postgres-patterns/SKILL.md`：PostgreSQL 连接池（pgBouncer / max_connections）与共享缓冲。
+- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：MongoDB 连接池与 WT 缓存容量。
+- 兄弟参考：
+  - `references/backup-recovery.md`：容量含 binlog / WAL 增长。
+  - `references/engine-selection.md`：容量成本影响选型。
+  - `references/slow-query-triage.md`：容量不足会直接引发慢查询。

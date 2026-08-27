@@ -170,3 +170,17 @@ python3 scripts/schema_lint.py migrations/ --dialect auto --strict
 - [ ] 回填分批（1000–10000 行/批）且幂等
 - [ ] 磁盘余量 ≥ 表体积 × 2
 - [ ] 执行期间监控复制延迟与锁等待，有降速/中止预案
+
+## 相关子技能与层次边界
+
+本 playbook 负责**零停机 Schema 变更与回填**的决策；不负责备份本身，迁移前先备。
+
+- 落地到 `skills/mysql/SKILL.md`：原生 ONLINE DDL vs gh-ost 选择。
+- 落地到 `skills/postgres-patterns/SKILL.md`：CONCURRENTLY 建索引 / 扩展迁移。
+- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：文档结构演进与兼容性。
+- 兄弟参考：
+  - `references/transactions-locking.md`：在线 DDL 的锁等待与降速预案。
+  - `references/backup-recovery.md`：执行前确认可回滚备份。
+  - `references/index-design.md`：迁移常伴随索引调整。
+- 脚本：
+  - `scripts/schema_lint.py`：迁移前后校验 schema 结构与命名规范。

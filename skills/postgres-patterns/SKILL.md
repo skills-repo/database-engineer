@@ -57,3 +57,14 @@ tags:
 - 聚焦 PG 特有功能，不涉及通用 SQL 基础
 - 扩展生态覆盖概览，不深入单个扩展的完整文档
 - 不涉及 PG 集群管理和容灾方案
+
+## 相关参考（Playbook）
+
+执行计划解读（三引擎对照）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
+索引设计决策（含部分/表达式/GIN）→ `references/index-design.md`；
+慢查询分诊（pg_stat_statements）→ `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
+事务、隔离级别与锁 → `references/transactions-locking.md`；
+Schema 变更与零停机迁移（CONCURRENTLY）→ `references/schema-migration.md`（`scripts/schema_lint.py`）；
+备份与恢复（WAL 归档）→ `references/backup-recovery.md`；
+连接池与容量规划（pgBouncer）→ `references/capacity-and-pooling.md`；
+数据库选型决策 → `references/engine-selection.md`。

@@ -189,3 +189,17 @@ WHERE n_dead_tup > 10000 ORDER BY dead_ratio DESC LIMIT 10;
 - [ ] 优化手段从性价比高的开始，未跳级上缓存/分片
 - [ ] 优化后重新测量并记录对比
 - [ ] 临时开启的 profiler / general log 已关闭
+
+## 相关子技能与层次边界
+
+本 playbook 负责**慢查询分诊（基线→定位→性价比优化→复测）**；不负责容量规划，见兄弟参考。
+
+- 落地到 `skills/mysql/SKILL.md`：慢查询日志 / Performance Schema 定位。
+- 落地到 `skills/postgres-patterns/SKILL.md`：pg_stat_statements 定位。
+- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：profiler / 慢查询聚合定位。
+- 落地到 `skills/database-observability/SKILL.md`：监控先发现慢查询，再进分诊。
+- 兄弟参考：
+  - `references/explain-reading.md`：先看执行计划。
+  - `references/index-design.md`：缺索引优先补。
+- 脚本：
+  - `scripts/slowlog_digest.py`：慢日志聚合与基线对比。
