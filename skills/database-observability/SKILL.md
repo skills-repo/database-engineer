@@ -69,10 +69,10 @@ L4: 容量层 — 磁盘/连接数/备份 趋势 (P2/P3)
 
 ## 相关参考（Playbook）
 
-慢查询先由监控发现再进分诊 → `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
-连接池与容量规划（告警分级）→ `references/capacity-and-pooling.md`；
-备份任务成功心跳监控 → `references/backup-recovery.md`；
-锁等待监控 → `references/transactions-locking.md`；
-执行计划体检（辅助定位瓶颈）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
-索引/迁移的观测视角 → `references/index-design.md`、`references/schema-migration.md`；
-选型阶段的可观测性成本 → `references/engine-selection.md`。
+慢查询先由监控发现再进分诊 → [references/slow-query-triage.md](../../references/slow-query-triage.md)（`scripts/slowlog_digest.py`）；
+连接池与容量规划（告警分级）→ [references/capacity-and-pooling.md](../../references/capacity-and-pooling.md)；
+备份任务成功心跳监控 → [references/backup-recovery.md](../../references/backup-recovery.md)；
+锁等待监控 → [references/transactions-locking.md](../../references/transactions-locking.md)；
+执行计划体检（辅助定位瓶颈）→ [references/explain-reading.md](../../references/explain-reading.md)（`scripts/explain_audit.py`）；
+索引/迁移的观测视角 → [references/index-design.md](../../references/index-design.md)、[references/schema-migration.md](../../references/schema-migration.md)；
+选型阶段的可观测性成本 → [references/engine-selection.md](../../references/engine-selection.md)。

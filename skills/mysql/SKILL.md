@@ -67,11 +67,11 @@ tags:
 
 ## 相关参考（Playbook）
 
-执行计划解读（三引擎对照）→ `references/explain-reading.md`（`scripts/explain_audit.py`）；
-索引设计决策 → `references/index-design.md`；
-慢查询分诊（慢日志聚合）→ `references/slow-query-triage.md`（`scripts/slowlog_digest.py`）；
-事务、隔离级别与锁 → `references/transactions-locking.md`；
-Schema 变更与零停机迁移 → `references/schema-migration.md`（`scripts/schema_lint.py`）；
-备份与恢复（含恢复演练）→ `references/backup-recovery.md`；
-连接池与容量规划 → `references/capacity-and-pooling.md`；
-数据库选型决策 → `references/engine-selection.md`。
+执行计划解读（三引擎对照）→ [references/explain-reading.md](../../references/explain-reading.md)（`scripts/explain_audit.py`）；
+索引设计决策 → [references/index-design.md](../../references/index-design.md)；
+慢查询分诊（慢日志聚合）→ [references/slow-query-triage.md](../../references/slow-query-triage.md)（`scripts/slowlog_digest.py`）；
+事务、隔离级别与锁 → [references/transactions-locking.md](../../references/transactions-locking.md)；
+Schema 变更与零停机迁移 → [references/schema-migration.md](../../references/schema-migration.md)（`scripts/schema_lint.py`）；
+备份与恢复（含恢复演练）→ [references/backup-recovery.md](../../references/backup-recovery.md)；
+连接池与容量规划 → [references/capacity-and-pooling.md](../../references/capacity-and-pooling.md)；
+数据库选型决策 → [references/engine-selection.md](../../references/engine-selection.md)。
