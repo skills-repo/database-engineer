@@ -44,18 +44,18 @@ metadata:
 
 | 任务 | 读取 / 调用 | 关键词（grep 线索） |
 |------|------------|---------------------|
-| 引擎选型：关系型/文档/KV/时序决策树、反模式、迁移成本 | `references/engine-selection.md` | 选型、技术选型、用什么数据库、NoSQL、文档型、时序、KV |
-| 读执行计划：MySQL type/Extra、PG 节点类型、Mongo COLLSCAN 逐项释义 | `references/explain-reading.md` | EXPLAIN、执行计划、分析计划、Seq Scan、filesort、type=ALL |
-| 索引设计：ESR 列顺序规则、建不建的决策树、覆盖索引、冗余清理、写入成本 | `references/index-design.md` | 索引、复合索引、联合索引、ESR、覆盖索引、索引失效、选择性 |
-| 慢查询治理：从告警到根因的四步法、采集口径、按性价比排序的优化手段 | `references/slow-query-triage.md` | 慢查询、慢日志、SQL 优化、数据库变慢、性能排查、pg_stat_statements |
-| Schema 迁移：扩展-收缩模式、危险操作对照表、CONCURRENTLY/NOT VALID、gh-ost、分批回填 | `references/schema-migration.md` | 迁移、DDL、加字段、改类型、零停机、gh-ost、锁表、回填 |
-| 事务与锁：隔离级别取舍、死锁还原、长事务危害、悲观/乐观锁选择 | `references/transactions-locking.md` | 事务、隔离级别、死锁、锁等待、MVCC、幻读、乐观锁、长事务 |
-| 容量与连接池：连接数公式、池化选型、压测口径、三级告警阈值 | `references/capacity-and-pooling.md` | 容量规划、连接池、PgBouncer、max_connections、压测、告警阈值 |
-| 备份恢复：RPO/RTO 定义、三类备份、PITR 操作、恢复演练、3-2-1 原则 | `references/backup-recovery.md` | 备份、恢复、PITR、binlog、WAL、演练、RPO、RTO、误删数据 |
-| MySQL 专项：查询优化、索引策略、Schema 设计、存储引擎、复制与高可用 | `skills/mysql/SKILL.md` | MySQL、InnoDB、主从、binlog、my.cnf |
-| PostgreSQL 专项：高级查询、索引类型、并发控制、扩展、性能调优 | `skills/postgres-patterns/SKILL.md` | PostgreSQL、PG、GIN、GiST、VACUUM、CTE、分区表 |
-| MongoDB 专项：聚合管道、索引策略、Schema 设计、性能诊断 | `skills/mongodb-query-optimizer/SKILL.md` | MongoDB、聚合管道、aggregate、文档模型、分片 |
-| 可观测性专项：监控指标、慢查询告警、性能基线、日志分析 | `skills/database-observability/SKILL.md` | 监控、可观测性、指标、基线、告警、Prometheus、exporter |
+| 引擎选型：关系型/文档/KV/时序决策树、反模式、迁移成本 | [references/engine-selection.md](references/engine-selection.md) | 选型、技术选型、用什么数据库、NoSQL、文档型、时序、KV |
+| 读执行计划：MySQL type/Extra、PG 节点类型、Mongo COLLSCAN 逐项释义 | [references/explain-reading.md](references/explain-reading.md) | EXPLAIN、执行计划、分析计划、Seq Scan、filesort、type=ALL |
+| 索引设计：ESR 列顺序规则、建不建的决策树、覆盖索引、冗余清理、写入成本 | [references/index-design.md](references/index-design.md) | 索引、复合索引、联合索引、ESR、覆盖索引、索引失效、选择性 |
+| 慢查询治理：从告警到根因的四步法、采集口径、按性价比排序的优化手段 | [references/slow-query-triage.md](references/slow-query-triage.md) | 慢查询、慢日志、SQL 优化、数据库变慢、性能排查、pg_stat_statements |
+| Schema 迁移：扩展-收缩模式、危险操作对照表、CONCURRENTLY/NOT VALID、gh-ost、分批回填 | [references/schema-migration.md](references/schema-migration.md) | 迁移、DDL、加字段、改类型、零停机、gh-ost、锁表、回填 |
+| 事务与锁：隔离级别取舍、死锁还原、长事务危害、悲观/乐观锁选择 | [references/transactions-locking.md](references/transactions-locking.md) | 事务、隔离级别、死锁、锁等待、MVCC、幻读、乐观锁、长事务 |
+| 容量与连接池：连接数公式、池化选型、压测口径、三级告警阈值 | [references/capacity-and-pooling.md](references/capacity-and-pooling.md) | 容量规划、连接池、PgBouncer、max_connections、压测、告警阈值 |
+| 备份恢复：RPO/RTO 定义、三类备份、PITR 操作、恢复演练、3-2-1 原则 | [references/backup-recovery.md](references/backup-recovery.md) | 备份、恢复、PITR、binlog、WAL、演练、RPO、RTO、误删数据 |
+| MySQL 专项：查询优化、索引策略、Schema 设计、存储引擎、复制与高可用 | [skills/mysql/SKILL.md](skills/mysql/SKILL.md) | MySQL、InnoDB、主从、binlog、my.cnf |
+| PostgreSQL 专项：高级查询、索引类型、并发控制、扩展、性能调优 | [skills/postgres-patterns/SKILL.md](skills/postgres-patterns/SKILL.md) | PostgreSQL、PG、GIN、GiST、VACUUM、CTE、分区表 |
+| MongoDB 专项：聚合管道、索引策略、Schema 设计、性能诊断 | [skills/mongodb-query-optimizer/SKILL.md](skills/mongodb-query-optimizer/SKILL.md) | MongoDB、聚合管道、aggregate、文档模型、分片 |
+| 可观测性专项：监控指标、慢查询告警、性能基线、日志分析 | [skills/database-observability/SKILL.md](skills/database-observability/SKILL.md) | 监控、可观测性、指标、基线、告警、Prometheus、exporter |
 
 > 路由规则：**先判断任务层次**。做决策与取舍（选哪个引擎、要不要加索引、用什么隔离级别）读
 > `references/`；要落地某个引擎的具体语法与命令，直接调对应 `skills/` 子技能；

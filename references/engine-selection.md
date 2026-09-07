@@ -97,10 +97,10 @@ JSON 文档（JSONB）、全文搜索（tsvector）、向量（pgvector）、队
 
 本 playbook 负责**关系型 vs 文档型 vs 其他引擎**的选型决策；不负责单引擎内部实现，落地由对应子技能承接。
 
-- 落地到 `skills/mysql/SKILL.md`：选 MySQL 后的具体能力与迁移边界。
-- 落地到 `skills/postgres-patterns/SKILL.md`：选 PostgreSQL 后的扩展生态与高级模式。
-- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：选 MongoDB 后的文档模型与查询优化。
-- 落地到 `skills/database-observability/SKILL.md`：各引擎可观测性成本与指标差异。
+- 落地到 [skills/mysql/SKILL.md](../skills/mysql/SKILL.md)：选 MySQL 后的具体能力与迁移边界。
+- 落地到 [skills/postgres-patterns/SKILL.md](../skills/postgres-patterns/SKILL.md)：选 PostgreSQL 后的扩展生态与高级模式。
+- 落地到 [skills/mongodb-query-optimizer/SKILL.md](../skills/mongodb-query-optimizer/SKILL.md)：选 MongoDB 后的文档模型与查询优化。
+- 落地到 [skills/database-observability/SKILL.md](../skills/database-observability/SKILL.md)：各引擎可观测性成本与指标差异。
 - 兄弟参考：
-  - `references/backup-recovery.md`：恢复演练过才算数。
-  - `references/capacity-and-pooling.md`：容量预测决定托管成本。
+  - [references/backup-recovery.md](backup-recovery.md)：恢复演练过才算数。
+  - [references/capacity-and-pooling.md](capacity-and-pooling.md)：容量预测决定托管成本。

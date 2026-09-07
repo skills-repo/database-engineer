@@ -191,9 +191,9 @@ ALTER SYSTEM SET idle_in_transaction_session_timeout = '60s';
 
 本 playbook 负责**事务隔离级别、锁与死锁**的决策；不负责 Schema 迁移，见兄弟参考。
 
-- 落地到 `skills/mysql/SKILL.md`：InnoDB 锁类型 / 死锁退避重试。
-- 落地到 `skills/postgres-patterns/SKILL.md`：PG 锁与 idle_in_transaction 超时。
-- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：MongoDB 多文档事务与单文档原子性边界。
+- 落地到 [skills/mysql/SKILL.md](../skills/mysql/SKILL.md)：InnoDB 锁类型 / 死锁退避重试。
+- 落地到 [skills/postgres-patterns/SKILL.md](../skills/postgres-patterns/SKILL.md)：PG 锁与 idle_in_transaction 超时。
+- 落地到 [skills/mongodb-query-optimizer/SKILL.md](../skills/mongodb-query-optimizer/SKILL.md)：MongoDB 多文档事务与单文档原子性边界。
 - 兄弟参考：
-  - `references/schema-migration.md`：在线 DDL 的锁等待。
-  - `references/backup-recovery.md`：一致性备份与锁的相互作用。
+  - [references/schema-migration.md](schema-migration.md)：在线 DDL 的锁等待。
+  - [references/backup-recovery.md](backup-recovery.md)：一致性备份与锁的相互作用。

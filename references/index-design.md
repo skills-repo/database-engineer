@@ -176,10 +176,10 @@ python3 scripts/schema_lint.py migrations/V42__add_orders.sql --dialect postgres
 
 本 playbook 负责**索引设计决策（选型 / 冗余 / 在线加索引）**；不负责执行计划解读，见兄弟参考。
 
-- 落地到 `skills/mysql/SKILL.md`：MySQL 索引类型与在线 DDL（INPLACE / gh-ost）。
-- 落地到 `skills/postgres-patterns/SKILL.md`：PostgreSQL 索引类型（B-tree / 部分 / 表达式 / GIN）。
-- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：MongoDB 复合索引与 ESR 规则。
+- 落地到 [skills/mysql/SKILL.md](../skills/mysql/SKILL.md)：MySQL 索引类型与在线 DDL（INPLACE / gh-ost）。
+- 落地到 [skills/postgres-patterns/SKILL.md](../skills/postgres-patterns/SKILL.md)：PostgreSQL 索引类型（B-tree / 部分 / 表达式 / GIN）。
+- 落地到 [skills/mongodb-query-optimizer/SKILL.md](../skills/mongodb-query-optimizer/SKILL.md)：MongoDB 复合索引与 ESR 规则。
 - 兄弟参考：
-  - `references/explain-reading.md`：上线前后 EXPLAIN 对比，不靠感觉。
-  - `references/slow-query-triage.md`：缺索引是最常见慢查询根因。
-  - `references/schema-migration.md`：大表在线加索引的锁方案。
+  - [references/explain-reading.md](explain-reading.md)：上线前后 EXPLAIN 对比，不靠感觉。
+  - [references/slow-query-triage.md](slow-query-triage.md)：缺索引是最常见慢查询根因。
+  - [references/schema-migration.md](schema-migration.md)：大表在线加索引的锁方案。

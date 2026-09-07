@@ -1,6 +1,6 @@
 # 恢复演练 Runbook 模板
 
-> 配套 `references/backup-recovery.md`。**没演练过的备份不算备份**——这份模板的目的，
+> 配套 [references/backup-recovery.md](../references/backup-recovery.md)。**没演练过的备份不算备份**——这份模板的目的，
 > 是把"我们有备份"这句话变成一个有日期、有耗时、有签字的记录。
 >
 > 用法：复制一份到你们自己的文档库，填空后按季度执行。历史记录不要删，

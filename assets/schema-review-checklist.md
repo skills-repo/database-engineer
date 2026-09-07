@@ -1,6 +1,6 @@
 # Schema / 索引 变更评审清单
 
-> 配套 `references/index-design.md` 与 `references/schema-migration.md`。
+> 配套 [references/index-design.md](../references/index-design.md) 与 [references/schema-migration.md](../references/schema-migration.md)。
 > 贴进 MR 模板或工单模板里用。**能被脚本自动检查的项已标注**，
 > 先跑脚本再人工评审，把人的注意力留给脚本查不了的部分。
 

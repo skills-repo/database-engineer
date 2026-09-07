@@ -26,10 +26,10 @@
 
 | 环节 | 技能 | 文件 | 用途 |
 |------|------|------|------|
-| 关系型 | mysql | `skills/mysql/SKILL.md` | MySQL 查询优化、索引、Schema、复制 |
-| 关系型 | postgres-patterns | `skills/postgres-patterns/SKILL.md` | PostgreSQL 高级查询、并发、扩展 |
-| 文档型 | mongodb-query-optimizer | `skills/mongodb-query-optimizer/SKILL.md` | MongoDB 聚合管道、索引、Schema |
-| 运维 | database-observability | `skills/database-observability/SKILL.md` | 监控指标、告警、容量规划 |
+| 关系型 | mysql | [skills/mysql/SKILL.md](skills/mysql/SKILL.md) | MySQL 查询优化、索引、Schema、复制 |
+| 关系型 | postgres-patterns | [skills/postgres-patterns/SKILL.md](skills/postgres-patterns/SKILL.md) | PostgreSQL 高级查询、并发、扩展 |
+| 文档型 | mongodb-query-optimizer | [skills/mongodb-query-optimizer/SKILL.md](skills/mongodb-query-optimizer/SKILL.md) | MongoDB 聚合管道、索引、Schema |
+| 运维 | database-observability | [skills/database-observability/SKILL.md](skills/database-observability/SKILL.md) | 监控指标、告警、容量规划 |
 
 ## 使用场景
 

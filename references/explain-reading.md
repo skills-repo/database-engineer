@@ -148,11 +148,11 @@ db.orders.find({status:"paid"}).sort({created:-1}).explain("executionStats")
 
 本 playbook 负责**三引擎（MySQL / PostgreSQL / MongoDB）执行计划解读**的决策；不负责建索引本身，索引见兄弟参考。
 
-- 落地到 `skills/mysql/SKILL.md`：EXPLAIN / EXPLAIN FORMAT=JSON 解读（type / rows / filtered）。
-- 落地到 `skills/postgres-patterns/SKILL.md`：EXPLAIN (ANALYZE, BUFFERS) 解读（Seq Scan / 预估偏差）。
-- 落地到 `skills/mongodb-query-optimizer/SKILL.md`：explain("executionStats") 解读（COLLSCAN / 索引命中）。
+- 落地到 [skills/mysql/SKILL.md](../skills/mysql/SKILL.md)：EXPLAIN / EXPLAIN FORMAT=JSON 解读（type / rows / filtered）。
+- 落地到 [skills/postgres-patterns/SKILL.md](../skills/postgres-patterns/SKILL.md)：EXPLAIN (ANALYZE, BUFFERS) 解读（Seq Scan / 预估偏差）。
+- 落地到 [skills/mongodb-query-optimizer/SKILL.md](../skills/mongodb-query-optimizer/SKILL.md)：explain("executionStats") 解读（COLLSCAN / 索引命中）。
 - 兄弟参考：
-  - `references/index-design.md`：索引直接改变执行计划。
-  - `references/slow-query-triage.md`：慢查询先读计划再下手。
+  - [references/index-design.md](index-design.md)：索引直接改变执行计划。
+  - [references/slow-query-triage.md](slow-query-triage.md)：慢查询先读计划再下手。
 - 脚本：
   - `scripts/explain_audit.py`：对执行计划做体检（扫描类型 / 估算行数偏差 / 临时表阶段）。
