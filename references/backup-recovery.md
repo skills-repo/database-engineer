@@ -110,7 +110,7 @@ mysqlbinlog --start-datetime="2026-08-07 00:00:00" \
 
 ### 演练清单（建议季度执行）
 
-可直接复制 `assets/backup-runbook.md` 作为演练记录模板——它把每一步的耗时、
+可直接复制 [assets/backup-runbook.md](../assets/backup-runbook.md) 作为演练记录模板——它把每一步的耗时、
 校验口径和复盘表都固定下来了，避免演练做成"能启动就算过"。
 
 ```bash

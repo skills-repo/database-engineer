@@ -137,7 +137,7 @@ ORDER BY data_length + index_length DESC LIMIT 10;
 
 ## 五、告警阈值参考
 
-分级设置，避免告警疲劳。可直接套用 `assets/db-alert-rules.yml`。
+分级设置，避免告警疲劳。可直接套用 [assets/db-alert-rules.yml](../assets/db-alert-rules.yml)。
 
 | 指标 | P1（立即处理） | P2（当天处理） | P3（周内跟进） |
 |------|---------------|---------------|---------------|

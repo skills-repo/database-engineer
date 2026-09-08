@@ -202,4 +202,4 @@ WHERE n_dead_tup > 10000 ORDER BY dead_ratio DESC LIMIT 10;
   - [references/explain-reading.md](explain-reading.md)：先看执行计划。
   - [references/index-design.md](index-design.md)：缺索引优先补。
 - 脚本：
-  - `scripts/slowlog_digest.py`：慢日志聚合与基线对比。
+  - [scripts/slowlog_digest.py](../scripts/slowlog_digest.py)：慢日志聚合与基线对比。

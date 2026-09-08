@@ -155,4 +155,4 @@ db.orders.find({status:"paid"}).sort({created:-1}).explain("executionStats")
   - [references/index-design.md](index-design.md)：索引直接改变执行计划。
   - [references/slow-query-triage.md](slow-query-triage.md)：慢查询先读计划再下手。
 - 脚本：
-  - `scripts/explain_audit.py`：对执行计划做体检（扫描类型 / 估算行数偏差 / 临时表阶段）。
+  - [scripts/explain_audit.py](../scripts/explain_audit.py)：对执行计划做体检（扫描类型 / 估算行数偏差 / 临时表阶段）。

@@ -153,7 +153,7 @@ WHERE id IN (SELECT id FROM orders WHERE tenant_id IS NULL LIMIT 5000);
 
 ## 八、上线检查清单
 
-完整版（含风险等级与评审结论表格）见 `assets/schema-review-checklist.md`。
+完整版（含风险等级与评审结论表格）见 [assets/schema-review-checklist.md](../assets/schema-review-checklist.md)。
 迁移脚本进评审前先过一遍静态检查，退出码非 0 不进人工评审：
 
 ```bash
@@ -183,4 +183,4 @@ python3 scripts/schema_lint.py migrations/ --dialect auto --strict
   - [references/backup-recovery.md](backup-recovery.md)：执行前确认可回滚备份。
   - [references/index-design.md](index-design.md)：迁移常伴随索引调整。
 - 脚本：
-  - `scripts/schema_lint.py`：迁移前后校验 schema 结构与命名规范。
+  - [scripts/schema_lint.py](../scripts/schema_lint.py)：迁移前后校验 schema 结构与命名规范。

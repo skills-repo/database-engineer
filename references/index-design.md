@@ -156,7 +156,7 @@ db.orders.aggregate([{$indexStats:{}}])   // accesses.ops 为 0 的可考虑删
 
 ## 八、检查清单
 
-评审阶段建议直接套用 `assets/schema-review-checklist.md`（含 MR 模板与一票否决项）；
+评审阶段建议直接套用 [assets/schema-review-checklist.md](../assets/schema-review-checklist.md)（含 MR 模板与一票否决项）；
 表结构层面的机械问题先交给脚本，把人的注意力留给设计判断：
 
 ```bash

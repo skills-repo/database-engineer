@@ -88,11 +88,11 @@ python3 scripts/slowlog_digest.py /var/log/mysql/slow.log --top 10
 
 `assets/` 提供可直接套用的配置与模板：
 
-- `assets/db-alert-rules.yml` — Prometheus 数据库告警规则，含 P1/P2/P3 三级共 20 条：
+- [assets/db-alert-rules.yml](assets/db-alert-rules.yml) — Prometheus 数据库告警规则，含 P1/P2/P3 三级共 20 条：
   磁盘写满预测、连接数、复制中断与延迟、缓存命中、长事务、XID 回卷、备份心跳等。
-- `assets/schema-review-checklist.md` — Schema/索引变更评审清单，标注了哪些项可由脚本自动检查，
+- [assets/schema-review-checklist.md](assets/schema-review-checklist.md) — Schema/索引变更评审清单，标注了哪些项可由脚本自动检查，
   附风险等级与一票否决项。
-- `assets/backup-runbook.md` — 恢复演练 Runbook 模板，含耗时记录表、三层数据校验口径、
+- [assets/backup-runbook.md](assets/backup-runbook.md) — 恢复演练 Runbook 模板，含耗时记录表、三层数据校验口径、
   复盘表与五种真实失败模式。
 
 ## 核心原则（始终遵循）
