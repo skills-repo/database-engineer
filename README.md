@@ -72,13 +72,13 @@ MongoDB ──────┘    (监控与告警)
 
 ```bash
 # 安装全部数据库技能
-npx skills add skills-repo/database-engineer
+npx skills add skills-repo/database-engineer -g -y
 
 # 或按需安装单个技能
-npx skills add skills-repo/database-engineer@mysql
-npx skills add skills-repo/database-engineer@postgres-patterns
-npx skills add skills-repo/database-engineer@mongodb-query-optimizer
-npx skills add skills-repo/database-engineer@database-observability
+npx skills add skills-repo/database-engineer@mysql -g -y
+npx skills add skills-repo/database-engineer@postgres-patterns -g -y
+npx skills add skills-repo/database-engineer@mongodb-query-optimizer -g -y
+npx skills add skills-repo/database-engineer@database-observability -g -y
 ```
 
 ## 与本组织其他仓库的关系
