@@ -13,6 +13,8 @@
 | postgres-patterns | PostgreSQL 高级查询、索引类型、并发控制、扩展生态 | 7.8K | [skills.sh](https://skills.sh/affaan-m/everything-claude-code/postgres-patterns) |
 | mongodb-query-optimizer | MongoDB 聚合管道优化、索引策略、Schema 设计、性能诊断 | 3.8K | [skills.sh](https://skills.sh/mongodb/agent-skills/mongodb-query-optimizer) |
 | database-observability | 数据库监控指标、慢查询告警、性能基线、容量规划 | 1.9K | [skills.sh](https://skills.sh/grafana/skills/database-observability) |
+| redis-cache-patterns | Redis 数据结构选型、缓存模式与失效防护 | 7.6K | [skills.sh](https://github.com/redis/agent-skills) |
+| distributed-rate-limit | 限流算法、Lua 原子实现、幂等键与分布式锁 | 24.0K | [skills.sh](https://github.com/upstash/skills) |
 
 ## 仓库结构
 
@@ -79,6 +81,8 @@ npx skills add skills-repo/database-engineer@mysql -g -y
 npx skills add skills-repo/database-engineer@postgres-patterns -g -y
 npx skills add skills-repo/database-engineer@mongodb-query-optimizer -g -y
 npx skills add skills-repo/database-engineer@database-observability -g -y
+npx skills add skills-repo/database-engineer@redis-cache-patterns -g -y
+npx skills add skills-repo/database-engineer@distributed-rate-limit -g -y
 ```
 
 ## 与本组织其他仓库的关系

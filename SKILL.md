@@ -10,7 +10,7 @@ description: >-
   备份、恢复、PITR、主从、复制延迟、MySQL、PostgreSQL、MongoDB"。
 agent_created: true
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: 数据库
   difficulty: 进阶
   architecture: superpower
@@ -56,6 +56,8 @@ metadata:
 | PostgreSQL 专项：高级查询、索引类型、并发控制、扩展、性能调优 | [skills/postgres-patterns/SKILL.md](skills/postgres-patterns/SKILL.md) | PostgreSQL、PG、GIN、GiST、VACUUM、CTE、分区表 |
 | MongoDB 专项：聚合管道、索引策略、Schema 设计、性能诊断 | [skills/mongodb-query-optimizer/SKILL.md](skills/mongodb-query-optimizer/SKILL.md) | MongoDB、聚合管道、aggregate、文档模型、分片 |
 | 可观测性专项：监控指标、慢查询告警、性能基线、日志分析 | [skills/database-observability/SKILL.md](skills/database-observability/SKILL.md) | 监控、可观测性、指标、基线、告警、Prometheus、exporter |
+| Redis 缓存设计：数据结构选型、Key 命名、失效策略、击穿穿透雪崩防护 | [skills/redis-cache-patterns/SKILL.md](skills/redis-cache-patterns/SKILL.md) | Redis、缓存、cache、TTL、Cache-Aside、失效、击穿、雪崩、Hash、Sorted Set |
+| 限流与幂等：窗口/令牌桶算法、Lua 原子实现、幂等键、分布式锁取舍 | [skills/distributed-rate-limit/SKILL.md](skills/distributed-rate-limit/SKILL.md) | 限流、rate limit、令牌桶、滑动窗口、幂等、Idempotency、分布式锁、Lua、配额 |
 
 > 路由规则：**先判断任务层次**。做决策与取舍（选哪个引擎、要不要加索引、用什么隔离级别）读
 > `references/`；要落地某个引擎的具体语法与命令，直接调对应 `skills/` 子技能；
