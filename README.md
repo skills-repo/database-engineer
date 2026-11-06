@@ -22,7 +22,7 @@
 database-engineer/
 ├── SKILL.md          # L1 路由层：能力索引 + grep 关键词，不含具体实现
 ├── references/       # L2 方法论 playbook（8 篇，按需加载）
-├── skills/           # L3 子技能（4 个引擎/领域专项）
+├── skills/           # L3 子技能（6 个引擎/领域专项）
 ├── scripts/          # L4 零依赖脚本（3 个，可直接 CI 门禁）
 └── assets/           # L5 模板资源（3 份）
 ```
